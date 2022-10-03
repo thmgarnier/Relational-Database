@@ -1,0 +1,22 @@
+CREATE TABLE public.students (
+    student_id integer NOT NULL,
+    first_name character varying(50) NOT NULL,
+    last_name character varying(50) NOT NULL,
+    major_id integer,
+    gpa numeric(2,1)
+);
+
+CREATE TABLE public.courses (
+    course_id integer NOT NULL,
+    course character varying(100) NOT NULL
+);
+
+CREATE TABLE public.majors (
+    major_id integer NOT NULL,
+    major character varying(50) NOT NULL
+);
+
+CREATE TABLE public.majors_courses (
+    major_id integer NOT NULL,
+    course_id integer NOT NULL
+);
